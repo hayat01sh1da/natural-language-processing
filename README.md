@@ -1,21 +1,21 @@
 ## 1. Environment
 
-* WSL(Ubuntu 20.04.6 LTS)
-* Python 3.12.3
+- WSL(Ubuntu 20.04.6 LTS)
+- Python 3.12.3
 
 ## 2. Reference
 
-* [『15Stepで踏破 自然言語処理アプリケーション開発入門 (StepUp!選書)』](https://bookmeter.com/books/14438482)
-* [gensim](https://radimrehurek.com/gensim/auto_examples/index.html)
-* [Keras](https://keras.io/guides/)
-* [matplotlib](https://matplotlib.org/)
-* [mecab](https://taku910.github.io/mecab/)
-* [neologd](https://github.com/neologd/mecab-ipadic-neologd)
-* [NumPy v1.19 Manual](https://numpy.org/doc/stable/)
-* [pandas](https://pandas.pydata.org/docs/)
-* [scikit-laern](https://scikit-learn.org/stable/user_guide.html)
-* [SciPy](https://www.scipy.org/docs.html)
-* [Regexp.ja](https://github.com/neologd/mecab-ipadic-neologd/wiki/Regexp.ja)
+- [『15Stepで踏破 自然言語処理アプリケーション開発入門 (StepUp!選書)』](https://bookmeter.com/books/14438482)
+- [gensim](https://radimrehurek.com/gensim/auto_examples/index.html)
+- [Keras](https://keras.io/guides/)
+- [matplotlib](https://matplotlib.org/)
+- [mecab](https://taku910.github.io/mecab/)
+- [neologd](https://github.com/neologd/mecab-ipadic-neologd)
+- [NumPy v1.19 Manual](https://numpy.org/doc/stable/)
+- [pandas](https://pandas.pydata.org/docs/)
+- [scikit-laern](https://scikit-learn.org/stable/user_guide.html)
+- [SciPy](https://www.scipy.org/docs.html)
+- [Regexp.ja](https://github.com/neologd/mecab-ipadic-neologd/wiki/Regexp.ja)
 
 ## 3. Setup
 
@@ -23,7 +23,7 @@
 
 #### 3-1-1. lzma
 
-* If you have not install `lzma` in your environment, an error will occur in importing `pandas` as follows.
+- If you have not install `lzma` in your environment, an error will occur in importing `pandas` as follows.
 
 ```bash
 /home/username/.pyenv/versions/3.8.1/lib/python3.8/site-packages/pandas/compat/__init__.py:117: UserWarning: Could not import the lzma module. Your installed Python is incomplete. Attempting to use lzma compression will result in a RuntimeError.
