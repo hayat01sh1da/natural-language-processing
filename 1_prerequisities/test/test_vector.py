@@ -2,13 +2,22 @@ import unittest
 import numpy as np
 from numpy.testing import assert_array_equal, assert_almost_equal
 import sys
+import os
+import shutil
+import glob
 sys.path.append('./src')
 from vector import Vector
 
 class TestVector(unittest.TestCase):
     def setUp(self):
-        vec         = [1, 2, 3, 4, 5]
-        self.vector = Vector(vec)
+        vec           = [1, 2, 3, 4, 5]
+        self.vector   = Vector(vec)
+        self.pycaches = glob.glob(os.path.join('.', '**', '__pycache__'), recursive = True)
+
+    def tearDown(self):
+        for pycache in self.pycaches:
+            if os.path.isdir(pycache):
+                shutil.rmtree(pycache)
 
     def test_array(self):
         assert_array_equal(np.array([1, 2, 3, 4, 5]), self.vector.array())

@@ -2,6 +2,9 @@ import unittest
 import numpy as np
 from numpy.testing import assert_array_equal, assert_almost_equal
 import sys
+import os
+import shutil
+import glob
 sys.path.append('./src')
 from matrix import Matrix
 
@@ -13,7 +16,13 @@ class TestMatrix(unittest.TestCase):
             [ 9, 10, 11, 12],
             [13, 14, 15, 16],
         ]
-        self.matrix = Matrix(mtx)
+        self.matrix   = Matrix(mtx)
+        self.pycaches = glob.glob(os.path.join('.', '**', '__pycache__'), recursive = True)
+
+    def tearDown(self):
+        for pycache in self.pycaches:
+            if os.path.isdir(pycache):
+                shutil.rmtree(pycache)
 
     def test_array(self):
         assert_array_equal(
