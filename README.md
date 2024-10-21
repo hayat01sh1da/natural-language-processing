@@ -111,3 +111,14 @@ $ fc-list | grep -i ipa
 ```bash
 $ pip install -r requirements.txt
 ```
+
+## 4. Bulk Execution of Unit Tests
+
+```command
+$ bash run_unittests.sh 
+.......................................
+----------------------------------------------------------------------
+Ran 39 tests in 0.181s
+
+OK
+```
