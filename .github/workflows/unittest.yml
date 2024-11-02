@@ -11,7 +11,8 @@ on:
     branches:
       - master
     paths:
-      - ./python
+      - ./1_prerequisities
+      - '!./1_prerequisities/README.md'
 
 permissions:
   contents: read
