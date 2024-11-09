@@ -8,14 +8,18 @@ on:
     branches:
       - master
     paths:
-      - ./1_prerequisities
-      - '!./1_prerequisities/README.md'
+      - '.github/workflows/unittest.yml'
+      - 'run_unittests.sh'
+      - 'requirements.txt'
+      - '**.py'
   pull_request:
     branches:
       - master
     paths:
-      - ./1_prerequisities
-      - '!./1_prerequisities/README.md'
+      - '.github/workflows/unittest.yml'
+      - 'run_unittests.sh'
+      - 'requirements.txt'
+      - '**.py'
 
 permissions:
   contents: read
