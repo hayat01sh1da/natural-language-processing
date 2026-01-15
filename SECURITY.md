@@ -23,7 +23,7 @@
 
 Please disclose vulnerabilities privately:
 
-1. Use GitHub **Security → Report a vulnerability** to open a private advisory  (preferred). Include dataset links and scripts/notebooks that reproduce the  issue.
+1. Use GitHub **Security → Report a vulnerability** to open a private advisory (preferred). Include dataset links and scripts/notebooks that reproduce the  issue.
 2. Or email `security@myproject.org` with detailed steps, affected components,  and suggested mitigations.
 
 We acknowledge within **3 business days** and share updates at least every **7 business days** during investigation.
