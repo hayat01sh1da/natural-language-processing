@@ -2,10 +2,8 @@
 
 ## Supported Versions
 
-- Only the latest code on `master` is supported. Run `bash run_unittests.sh`
-	against the versions below before submitting a report.
-- Derived notebooks or experiments that pin older dependencies are considered
-	out of scope unless they reproduce on the current stack.
+- Only the latest code on `master` is supported. Run `bash run_unittests.sh` against the versions below before submitting a report.
+- Derived notebooks or experiments that pin older dependencies are considered out of scope unless they reproduce on the current stack.
 
 ## Ecosystem & Compatibility
 
@@ -18,21 +16,14 @@
 
 ## Backward Compatibility
 
-- Code samples are tested on Python 3.14.x. We keep APIs and CLI flags stable
-	within that runtime line; breaking tokenizer changes are documented in the
-	release notes.
-- Older Python versions or MeCab dictionary builds are unsupported, and we do
-	not backport fixes to them.
+- Code samples are tested on Python 3.14.x. We keep APIs and CLI flags stable within that runtime line; breaking tokenizer changes are documented in the release notes.
+- Older Python versions or MeCab dictionary builds are unsupported, and we do not backport fixes to them.
 
 ## Reporting a Vulnerability
 
 Please disclose vulnerabilities privately:
 
-1. Use GitHub **Security → Report a vulnerability** to open a private advisory
-	 (preferred). Include dataset links and scripts/notebooks that reproduce the
-	 issue.
-2. Or email `security@project.org` with detailed steps, affected components,
-	 and suggested mitigations.
+1. Use GitHub **Security → Report a vulnerability** to open a private advisory  (preferred). Include dataset links and scripts/notebooks that reproduce the  issue.
+2. Or email `security@project.org` with detailed steps, affected components,  and suggested mitigations.
 
-We acknowledge within **3 business days** and share updates at least every **7
-business days** during investigation.
+We acknowledge within **3 business days** and share updates at least every **7 business days** during investigation.
