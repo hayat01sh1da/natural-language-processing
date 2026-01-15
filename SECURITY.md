@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-- Only the latest code on `master` is supported. Run `bash run_unittests.sh` against the versions below before submitting a report.
+- Only the latest code on `master` is supported. Run `bash run_unittests.sh` using the environment described in the **Ecosystem & Compatibility** section before submitting a report.
 - Derived notebooks or experiments that pin older dependencies are considered out of scope unless they reproduce on the current stack.
 
 ## Ecosystem & Compatibility
