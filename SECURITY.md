@@ -2,20 +2,28 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+- Only the latest code on `master` is supported. Run `bash run_unittests.sh` using the environment described in the **Ecosystem & Compatibility** section before submitting a report.
+- Derived notebooks or experiments that pin older dependencies are considered out of scope unless they reproduce on the current stack.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+## Ecosystem & Compatibility
+
+| Component / Library      | Version(s) / Tooling               | Notes |
+| ------------------------ | ---------------------------------- | ----- |
+| OS baseline              | WSL (Ubuntu 24.04.3 LTS)           | Matches the setup guide. |
+| Python runtime           | CPython 3.14.2 (`.python-version`) | Managed with pyenv. |
+| Core Python packages     | `numpy`, `pandas`, `scikit-learn`, `scipy`, `gensim`, `keras`, `matplotlib` | Install via `pip install -r requirements.txt` plus documentation references. |
+| NLP tooling              | MeCab + ipadic-NEologd, `lzma`, IPA fonts | Follow README instructions for installation prior to running tokenizers. |
+
+## Backward Compatibility
+
+- Code samples are tested on Python 3.14.x. We keep APIs and CLI flags stable within that runtime line; breaking tokenizer changes are documented in the release notes.
+- Older Python versions or MeCab dictionary builds are unsupported, and we do not backport fixes to them.
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+Please disclose vulnerabilities privately:
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+1. Use GitHub **Security → Report a vulnerability** to open a private advisory (preferred). Include dataset links and scripts/notebooks that reproduce the  issue.
+2. Or email `security@myproject.org` with detailed steps, affected components,  and suggested mitigations.
+
+We acknowledge within **3 business days** and share updates at least every **7 business days** during investigation.
