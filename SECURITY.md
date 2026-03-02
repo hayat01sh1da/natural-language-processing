@@ -1,5 +1,3 @@
-# Security Policy
-
 ## Supported Versions
 
 - Only the latest code on `master` is supported. Run `bash run_unittests.sh` using the environment described in the **Ecosystem & Compatibility** section before submitting a report.
@@ -21,9 +19,7 @@
 
 ## Reporting a Vulnerability
 
-Please disclose vulnerabilities privately:
+Please report issues privately via **GitHub Security Advisory** (preferred) — open through the repository’s **Security → Report a vulnerability** workflow.
 
-1. Use GitHub **Security → Report a vulnerability** to open a private advisory (preferred). Include dataset links and scripts/notebooks that reproduce the  issue.
-2. Or email `security@myproject.org` with detailed steps, affected components,  and suggested mitigations.
-
-We acknowledge within **3 business days** and share updates at least every **7 business days** during investigation.
+Acknowledgement occurs and status updates follow as soon as possible.  
+After remediation we publish guidance alongside required dependency updates.
