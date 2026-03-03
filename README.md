@@ -1,3 +1,5 @@
+[![Actions Status: UnitTest](https://github.com/hayat01sh1da/natural-language-processing/workflows/UnitTest/badge.svg)](https://github.com/hayat01sh1da/natural-language-processing/actions?query=workflow%3A%22UnitTest%22)
+
 ## 1. Environment
 
 - WSL(Ubuntu 24.04.3 LTS)
