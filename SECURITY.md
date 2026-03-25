@@ -5,12 +5,12 @@
 
 ## Ecosystem & Compatibility
 
-| Component / Library      | Version(s) / Tooling               | Notes |
-| ------------------------ | ---------------------------------- | ----- |
-| OS baseline              | WSL (Ubuntu 24.04.3 LTS)           | Matches the setup guide. |
-| Python runtime           | CPython 3.14.3 (`.python-version`) | Managed with pyenv. |
-| Core Python packages     | `numpy`, `pandas`, `scikit-learn`, `scipy`, `gensim`, `keras`, `matplotlib` | Install via `pip install -r requirements.txt` plus documentation references. |
-| NLP tooling              | MeCab + ipadic-NEologd, `lzma`, IPA fonts | Follow README instructions for installation prior to running tokenizers. |
+| Component / Library  | Version(s) / Tooling                                                        | Notes                                                                        |
+| -------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| OS baseline          | WSL (Ubuntu 25.10)                                                          | Shared environment across tracks.                                            |
+| Python runtime       | CPython 3.14.3 (`.python-version`)                                          | Managed with pyenv.                                                          |
+| Core Python packages | `numpy`, `pandas`, `scikit-learn`, `scipy`, `gensim`, `keras`, `matplotlib` | Install via `pip install -r requirements.txt` plus documentation references. |
+| NLP tooling          | MeCab + ipadic-NEologd, `lzma`, IPA fonts                                   | Follow README instructions for installation prior to running tokenizers.     |
 
 ## Backward Compatibility
 
