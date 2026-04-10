@@ -1,24 +1,22 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
-name: UnitTest
+name: 1. Prerequisites
 
 on:
   push:
     branches:
       - master
     paths:
-      - '.github/workflows/unittest.yml'
-      - 'run_unittests.sh'
+      - '.github/workflows/1_prerequisites.yml'
       - 'requirements.txt'
-      - '**.py'
+      - '1_prerequisites/**/*.py'
       - .python-version
   pull_request:
     paths:
-      - '.github/workflows/unittest.yml'
-      - 'run_unittests.sh'
+      - '.github/workflows/1_prerequisites.yml'
       - 'requirements.txt'
-      - '**.py'
+      - '1_prerequisites/**/*.py'
       - .python-version
 
 permissions:
@@ -44,4 +42,5 @@ jobs:
           # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Run UnitTest
-        run: bash run_unittests.sh
+        working-directory: ./1_prerequisites
+        run: python -m unittest discover ./test
