@@ -9,22 +9,22 @@ sys.path.append('./src')
 from matrix import Matrix
 
 class TestMatrix(unittest.TestCase):
-    def setUp(self):
-        mtx = [
+    def setUp(self) -> None:
+        mtx: list[list[int]] = [
             [ 1,  2,  3,  4],
             [ 5,  6,  7,  8],
             [ 9, 10, 11, 12],
             [13, 14, 15, 16],
         ]
-        self.matrix   = Matrix(mtx)
-        self.pycaches = glob.glob(os.path.join('.', '**', '__pycache__'), recursive = True)
+        self.matrix: Matrix   = Matrix(mtx)
+        self.pycaches: list[str] = glob.glob(os.path.join('.', '**', '__pycache__'), recursive = True)
 
-    def tearDown(self):
+    def tearDown(self) -> None:
         for pycache in self.pycaches:
             if os.path.exists(pycache):
                 shutil.rmtree(pycache)
 
-    def test_array(self):
+    def test_array(self) -> None:
         assert_array_equal(
             self.matrix.array(),
             np.array([
@@ -35,10 +35,10 @@ class TestMatrix(unittest.TestCase):
             ])
         )
 
-    def test_shape(self):
+    def test_shape(self) -> None:
         self.assertEqual(self.matrix.shape(), (4, 4))
 
-    def test_slice(self):
+    def test_slice(self) -> None:
         assert_array_equal(
             self.matrix.slice(2, 1),
             np.array([
@@ -47,7 +47,7 @@ class TestMatrix(unittest.TestCase):
             ])
         )
 
-    def test_sum(self):
+    def test_sum(self) -> None:
         assert_array_equal(
             self.matrix.sum(self.matrix.array()),
             np.array([
@@ -58,7 +58,7 @@ class TestMatrix(unittest.TestCase):
             ])
         )
 
-    def test_broadcasting_sum(self):
+    def test_broadcasting_sum(self) -> None:
         assert_array_equal(
             self.matrix.sum(10),
             np.array([
@@ -69,7 +69,7 @@ class TestMatrix(unittest.TestCase):
             ])
         )
 
-    def test_substract(self):
+    def test_substract(self) -> None:
         mtx = np.array([
             [ 1, 15, 14,  8],
             [17,  9,  3, 19],
@@ -86,7 +86,7 @@ class TestMatrix(unittest.TestCase):
             ])
         )
 
-    def test_multiply(self):
+    def test_multiply(self) -> None:
         assert_array_equal(
             self.matrix.multiply(self.matrix.array()),
             np.array([
@@ -97,7 +97,7 @@ class TestMatrix(unittest.TestCase):
             ])
         )
 
-    def test_broadcasting_multiply(self):
+    def test_broadcasting_multiply(self) -> None:
         assert_array_equal(
             self.matrix.multiply(2),
             np.array([
@@ -108,7 +108,7 @@ class TestMatrix(unittest.TestCase):
             ])
         )
 
-    def test_dot_product(self):
+    def test_dot_product(self) -> None:
         mtx = np.array([
             [ 1, 15, 14,  8],
             [17,  9,  3, 19],
@@ -128,18 +128,18 @@ class TestMatrix(unittest.TestCase):
         vec = np.array([1, 2, 2, 0])
         assert_array_equal(self.matrix.dot_product(vec), np.array([11, 31, 51, 71]))
 
-    def test_max(self):
+    def test_max(self) -> None:
         assert_array_equal(self.matrix.max(0), np.array([13, 14, 15, 16]))
         assert_array_equal(self.matrix.max(1), np.array([4, 8, 12, 16]))
 
-    def test_arg_max(self):
+    def test_arg_max(self) -> None:
         assert_array_equal(self.matrix.arg_max(0), np.array([3, 3, 3, 3]))
         assert_array_equal(self.matrix.arg_max(1), np.array([3, 3, 3, 3]))
 
-    def test_numpy_sum(self):
+    def test_numpy_sum(self) -> None:
         self.assertEqual(self.matrix.numpy_sum(), 136)
 
-    def test_mean(self):
+    def test_mean(self) -> None:
         self.assertEqual(self.matrix.mean(), 8.5)
 
     # def test_exp(self):
@@ -156,7 +156,7 @@ class TestMatrix(unittest.TestCase):
     #         self.matrix.exp()
     #     )
 
-    def test_random(self):
+    def test_random(self) -> None:
         assert_almost_equal(
             self.matrix.random(10, 4, 4),
             np.array([
@@ -167,7 +167,7 @@ class TestMatrix(unittest.TestCase):
             ])
         )
 
-    def test_zeros(self):
+    def test_zeros(self) -> None:
         assert_almost_equal(
             self.matrix.zeros(4, 4),
             np.array([
@@ -178,7 +178,7 @@ class TestMatrix(unittest.TestCase):
             ])
         )
 
-    def test_ones(self):
+    def test_ones(self) -> None:
         assert_almost_equal(
             self.matrix.ones(4, 4),
             np.array([
@@ -188,10 +188,10 @@ class TestMatrix(unittest.TestCase):
                 [1, 1, 1, 1],
             ])
         )
-    def test_empty(self):
+    def test_empty(self) -> None:
         self.assertEqual(self.matrix.empty(4, 4).shape, (4, 4))
 
-    def test_hstack(self):
+    def test_hstack(self) -> None:
         mtx = np.array([
             [ 1, 15, 14,  8],
             [17,  9,  3, 19],
@@ -208,7 +208,7 @@ class TestMatrix(unittest.TestCase):
             ])
         )
 
-    def test_vstack(self):
+    def test_vstack(self) -> None:
         mtx = np.array([
             [ 1, 15, 14,  8],
             [17,  9,  3, 19],
