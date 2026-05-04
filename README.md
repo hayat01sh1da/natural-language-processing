@@ -115,13 +115,17 @@ $ fc-list | grep -i ipa
 $ pip install -r requirements.txt
 ```
 
-## 4. Bulk Execution of Unit Tests
+## 4. Unit Test
 
 ```command
-$ bash run_unittests.sh 
-.......................................
-----------------------------------------------------------------------
-Ran 39 tests in 0.181s
+$ pytest
+================================================================================= test session starts ==================================================================================
+platform linux -- Python 3.14.4, pytest-9.0.3, pluggy-1.6.0
+rootdir: /mnt/c/Users/binlh/Documents/development/natural-language-processing/1_prerequisites
+collected 39 items                                                                                                                                                                     
 
-OK
+test/test_matrix.py ...................                                                                                                                                          [ 48%]
+test/test_vector.py ....................                                                                                                                                         [100%]
+
+================================================================================== 39 passed in 0.63s ==================================================================================
 ```
