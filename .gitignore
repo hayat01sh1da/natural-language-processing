@@ -1,5 +1,7 @@
 # Python
-**/__pycache__
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
 
 # Others
 mecab-ipadic-neologd/
