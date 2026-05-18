@@ -1,0 +1,7 @@
+[tool.mypy]
+python_version = "3.14"
+warn_unused_configs = true
+# NumPy-heavy learning material: type-checking is kept lenient (mypy runs
+# and must pass, but per-function annotations are not enforced). Missing
+# third-party stubs are ignored. Mirrors the lenient `deep-learnings` setup.
+ignore_missing_imports = true

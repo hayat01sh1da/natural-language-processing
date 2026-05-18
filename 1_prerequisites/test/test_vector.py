@@ -36,7 +36,8 @@ def test_substract(vector):
 
 
 def test_multiply(vector):
-    assert_array_equal(vector.multiply(vector.array()), np.array([1, 4, 9, 16, 25]))
+    assert_array_equal(vector.multiply(vector.array()),
+                       np.array([1, 4, 9, 16, 25]))
 
 
 def test_broadcasting_multiply(vector):
@@ -65,10 +66,8 @@ def test_mean(vector):
 
 
 def test_exp(vector):
-    assert_almost_equal(
-        vector.exp(),
-        np.array([2.71828183, 7.3890561, 20.08553692, 54.59815003, 148.4131591]),
-    )
+    assert_almost_equal(vector.exp(), np.array(
+        [2.71828183, 7.3890561, 20.08553692, 54.59815003, 148.4131591]), )
 
 
 def test_random(vector):
@@ -92,7 +91,8 @@ def test_empty(vector):
 
 def test_hstack(vector):
     vec = np.array([1, 2, 2, 0, 1])
-    assert_array_equal(vector.hstack(vec), np.array([1, 2, 3, 4, 5, 1, 2, 2, 0, 1]))
+    assert_array_equal(vector.hstack(vec), np.array(
+        [1, 2, 3, 4, 5, 1, 2, 2, 0, 1]))
 
 
 def test_vstack(vector):
