@@ -118,14 +118,30 @@ $ pip install -r requirements.txt
 ## 4. Unit Test
 
 ```command
-$ pytest
-================================================================================= test session starts ==================================================================================
+$ pytest .
+============================= test session starts ==============================
 platform linux -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0
-rootdir: /mnt/c/Users/binlh/Documents/development/natural-language-processing/1_prerequisites
-collected 39 items                                                                                                                                                                     
+rootdir: natural-language-processing/1_prerequisites
+configfile: pyproject.toml
+collected 39 items
 
-test/test_matrix.py ...................                                                                                                                                          [ 48%]
-test/test_vector.py ....................                                                                                                                                         [100%]
+test/test_matrix.py ...................                                  [ 48%]
+test/test_vector.py ....................                                 [100%]
 
-================================================================================== 39 passed in 0.63s ==================================================================================
+============================== 39 passed in 0.57s ==============================
+```
+
+## 5. Static Code Analysis
+
+```command
+$ flake8 .
+$ autoflake8 --in-place --remove-duplicate-keys --remove-unused-variables --recursive .
+$ autopep8 --in-place --aggressive --aggressive --recursive .
+```
+
+## 6. Type Checks
+
+```command
+$ mypy .
+Success: no issues found in 6 source files
 ```
