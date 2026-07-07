@@ -1,4 +1,5 @@
 [![Actions Status: 1. Prerequisites](https://github.com/hayat01sh1da/natural-language-processing/workflows/1.%20Prerequisites/badge.svg)](https://github.com/hayat01sh1da/natural-language-processing/actions?query=workflow%3A%221.%20Prerequisites%22)
+[![Actions Status: Python - Daily Dependencies Update](https://github.com/hayat01sh1da/natural-language-processing/workflows/Python%20-%20Daily%20Dependencies%20Update/badge.svg)](https://github.com/hayat01sh1da/natural-language-processing/actions?query=workflow%3A%22Python%20-%20Daily%20Dependencies%20Update%22)
 [![Actions Status: CodeQL](https://github.com/hayat01sh1da/natural-language-processing/workflows/CodeQL/badge.svg)](https://github.com/hayat01sh1da/natural-language-processing/actions?query=workflow%3A%22CodeQL%22)
 
 ## 1. Environment
