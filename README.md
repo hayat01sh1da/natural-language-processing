@@ -5,7 +5,7 @@
 ## 1. Environment
 
 - WSL (Ubuntu 25.10)
-- Python 3.14.6
+- Python 3.14.7
 - pip 26.2.1
 
 ## 2. Reference
@@ -122,7 +122,7 @@ $ pip install -r requirements.txt
 ```command
 $ pytest .
 ============================= test session starts ==============================
-platform linux -- Python 3.14.6, pytest-9.0.3, pluggy-1.6.0
+platform linux -- Python 3.14.7, pytest-9.0.3, pluggy-1.6.0
 rootdir: natural-language-processing/1_prerequisites
 configfile: pyproject.toml
 collected 39 items
