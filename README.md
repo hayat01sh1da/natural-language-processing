@@ -1,7 +1,7 @@
 [![Actions Status: 1. Prerequisites](https://github.com/hayat01sh1da/natural-language-processing/workflows/1.%20Prerequisites/badge.svg)](https://github.com/hayat01sh1da/natural-language-processing/actions?query=workflow%3A%221.%20Prerequisites%22)
-[![Actions Status: Python - Daily Dependencies Update](https://github.com/hayat01sh1da/natural-language-processing/workflows/Python%20-%20Daily%20Dependencies%20Update/badge.svg)](https://github.com/hayat01sh1da/natural-language-processing/actions?query=workflow%3A%22Python%20-%20Daily%20Dependencies%20Update%22)
-[![Actions Status: Python - Daily Runtime Update](https://github.com/hayat01sh1da/natural-language-processing/workflows/Python%20-%20Daily%20Runtime%20Update/badge.svg)](https://github.com/hayat01sh1da/natural-language-processing/actions?query=workflow%3A%22Python%20-%20Daily%20Runtime%20Update%22)
 [![Actions Status: CodeQL](https://github.com/hayat01sh1da/natural-language-processing/workflows/CodeQL/badge.svg)](https://github.com/hayat01sh1da/natural-language-processing/actions?query=workflow%3A%22CodeQL%22)
+[![Actions Status: Daily Dependencies Update - Python](https://github.com/hayat01sh1da/natural-language-processing/workflows/Daily%20Dependencies%20Update%20-%20Python/badge.svg)](https://github.com/hayat01sh1da/natural-language-processing/actions?query=workflow%3A%22Daily%20Dependencies%20Update%20-%20Python%22)
+[![Actions Status: Daily Runtime Update - Python](https://github.com/hayat01sh1da/natural-language-processing/workflows/Daily%20Runtime%20Update%20-%20Python/badge.svg)](https://github.com/hayat01sh1da/natural-language-processing/actions?query=workflow%3A%22Daily%20Runtime%20Update%20-%20Python%22)
 
 ## 1. Environment
 
